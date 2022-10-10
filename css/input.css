@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-range] {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    height: 1rem;
+    background-color: hsl(229, 57%, 11%);
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+[data-range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%; 
+    background: white;
+    border: 2px solid hsl(335, 100%, 65%);
+    cursor: pointer;
+  }
+  
+  [data-range]::-moz-range-thumb {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid hsl(335, 100%, 65%);
+
+    cursor: pointer;
+  }
+
+  .rabbit {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(red to blue);
+  }

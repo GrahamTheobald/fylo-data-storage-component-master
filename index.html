@@ -5,27 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Fylo data storage component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class=" font-Raleway p-6 min-h-screen flex flex-col gap-6 justify-center items-center bg-[url('../images/bg-mobile.png')]">
+  <div class=" w-full p-12 bg-DarkBlue rounded-xl rounded-tr-boom">
+    <img src="./images/logo.svg" alt="logo">
+    <div class=" mt-10 flex items-center gap-4">
+      <div class=" bg-VeryDarkBlue flex justify-center items-center p-3 h-12 w-12 rounded-lg">
+        <img src="./images/icon-document.svg" alt="document">
+      </div>
+      <div class=" bg-VeryDarkBlue flex justify-center items-center p-3 h-12 w-12 rounded-lg">
+        <img src="./images/icon-folder.svg" alt="folder">
+      </div>
+      <div class=" bg-VeryDarkBlue flex justify-center items-center p-3 h-12 w-12 rounded-lg">
+        <img src="./images/icon-upload.svg" alt="upload">
+      </div>
+    </div>
+  </div>
+    
+  <div class=" w-full p-10 bg-DarkBlue rounded-xl text-sm relative">
+    <p class=" text-PaleBlue text-center">
+      You’ve used <span class=" font-bold">815 GB</span> of your storage
+    </p>
+    <input type="range" data-range class=" w-full my-4 rounded-lg bg-gradient-to-r from-Gradient1 to-Gradient2">
+    <div class=" flex justify-between text-PaleBlue mb-6">
+      <p class=" font-Raleway">
+        0 GB
+      </p>
+      <p>
+        1000 GB
+      </p>
+    </div >
+    <div class=" absolute left-1/2 -translate-x-1/2 bg-white px-4 py-3 rounded-xl flex gap-2 items-center">
+      <p class=" text-4xl font-bold">185</p> <p class=" uppercase text-GrayishBlue">GB Left</p>
+    </div>
   </div>
 </body>
 </html>
